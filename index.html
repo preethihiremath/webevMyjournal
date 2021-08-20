@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web develpment</title>
+        <link rel="stylesheet" href="/style/index.css">
+        <script src="https://kit.fontawesome.com/a6fe5ea3d0.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="container">
+                 <a class="brandname" href="#">MyJournal</a>
+                 <img id="menu-open" class="mobile-menu" src="img/menu.svg" alt="Open Navigation">
+                 <nav>
+                 <i class="fas fa-window-close" id="menu-close" ></i>
+                         <ul class="left-nav">
+                      <ul class="left-nav">
+                          <li class="active"><a  href="index.html">Home</a></li>
+                          <li><a href="features.html">features</a></li>
+                          <li><a href="blog.html">Blog</a></li>
+                          <li><a href="#">Contact</a></li>
+                      </ul>
+                      
+                      <ul class="right-nav">
+                          <li><a href="signup.html">Sign Up</a></li>
+                          <li><a href="login.html">Login</a></li>
+                      </ul>
+                 </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+          
+            <section class="hero" id="hero">
+                <div class="container">
+                    <div class="hero-left">
+                        <p class="pre-heading">Welcome to</p>
+                        <h1 class="heading" >One Stop Destination To Chase Perfection</h1>
+                        <div class="hero-btn">
+                           <a href="#" class="btn">Explore</a>
+                       </div>
+                    </div>
+                    <img src="/img/hero.svg" class="hero-img" alt="Hero Image" />
+                </div>
+            </section>
+            
+            <section class="features"  >
+                <div class="container">
+                        <h1 class="heading">Features</h1>
+                        <div class="features-left">
+                            <ol>
+                                <li><i class="fas fa-check-circle check"></i>Make a to-do list</li>
+                                <li> <i class="fas fa-check-circle check"></i>Set Remainder</li>
+                                <li><i class="fas fa-check-circle check"></i>Write in your journal</li>
+                                <li><i class="fas fa-check-circle check"></i>Rant it out</li>
+                                <li><i class="fas fa-check-circle check"></i>Bucket-list</li>
+                                <li><i class="fas fa-check-circle check"></i>Make your own schedule</li>
+                            </ol>
+                        </div>
+                        <img class="feature-img" src="/img/choose.svg" alt="Hero Image" />
+                </div>
+            </section>
+
+            <section class="testimonials">
+                <div class="container">
+                        <h1 class="heading">Testimonials</h1>
+                        <div >
+                            <ul>
+                                <li>
+                                     <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cGVvcGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="features Image" />
+                                     <p class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
+                                     <cite>-John Doe</cite>
+                                </li>
+
+                                <li>
+                                    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="features Image" />
+                                    <p class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
+                                    <cite>-Jane Doe</cite>
+                               </li>
+
+                               <li>
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHBlb3BsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="features Image" />
+                                <p class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
+                                <cite>-Jake Peralta</cite>
+                             </li>
+                        </ul>
+                    </div>                       
+                </div>
+            </section>
+
+           
+        </main>
+
+        <footer>   
+            <section class="contact">
+                    <div class="container">
+                        <div class="contact-left">
+                        <h1>Contact</h1>
+                       
+                            <form action="">
+                               
+                                <label for="firstname">First Name</label>
+                                <input type="text" id="firstname" name="firstname" placeholder="Enter your First name" />  
+                                
+                                <label for="lastname">Last Name</label>
+                                <input type="text" id="lastname" name="lastname" placeholder="Enter your Last name" />
+                               
+            
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="ph" placeholder="Enter Your Email"/>
+    
+                                <label for="ph">Phone Number</label>
+                                <input type="tel" id="ph" name="ph" placeholder="Enter Your Phone Number"/>
+    
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                                <div>
+                                    <input type="submit" value="Send Message" />
+                                </div>
+                            </form>
+                        </div>
+   
+                        <div class="contact-right">
+                            <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=600&amp;hl=en&amp;q=Bengaluru&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                        </div>
+                    </div>
+                </section>
+        </footer>
+        <script>
+            const menuBtn=document.getElementById('menu-open')
+            var nav=document.querySelector('nav')
+            var menuExit=document.getElementById('menu-close')
+
+            menuBtn.addEventListener('click',()=>{
+                nav.classList.add('menu-btn');
+            })
+            menuExit.addEventListener('click',()=>{
+                nav.classList.remove('menu-btn');
+            })
+        </script>
+
+    </body>
+</html>
