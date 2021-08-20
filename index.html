@@ -2,7 +2,623 @@
 <html>
     <head>
         <title>Web develpment</title>
-        <link rel="stylesheet" href="/style/index.css">
+       <style>
+           @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+body{
+    background-color: #f2f2f2;
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+section{
+padding: 5em 2em;
+}
+
+.navbar{
+    background: white;
+}
+.navbar .brandname{
+    color: #6c63ff;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-left: 30px;
+}
+.navbar nav{
+    display: none ;
+}
+#menu-open{
+    width:20px;
+    float: right;
+}
+
+.hero{
+    text-align: center;
+}
+.hero .pre-heading{
+    color: gray;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.hero .heading{
+    font-size: 30px;
+    margin-top: 0.6em;
+}
+
+.hero-left .hero-btn{
+    background-color: #6c63ff;
+    color: white;
+    border: 2px solid #6c63ff;
+    border-radius: 5em;
+    width: 100px;
+    padding: 0.5em 1.3em;
+    display:inline-block;
+}
+
+.hero-left .hero-btn .btn{
+    color: white;
+}
+.hero-img{
+    width: 50%;
+    margin-top: 30px;
+}
+.features{
+    background-color: #444444;
+    color: white;
+}
+.features .container .feature-img {
+    display: none;
+}
+.features .features-left ol{
+    list-style:none;
+}
+.features .features-left ol li{
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+
+}
+.heading{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 1.5em;
+}
+.testimonials{
+    background-color: #6c63ff;
+    color: black;
+}
+.testimonials .heading{
+    color: white;
+}
+ .testimonials li  {
+background: white;
+text-align: center;
+padding: 2em 1em;
+margin: 0 auto 5em auto;
+border-radius: 1em;
+
+}
+
+.testimonials li img{
+    width: 5em;
+    height: 5em;
+    border: 5px solid #4d47c9;
+    border-radius: 50%;
+    margin-top: -4.5em;
+}
+label{
+    display: block;
+    font-size:16px;
+    margin-bottom: 10px;
+}
+input,textarea{
+    width: 100%;
+    padding: 0.7em;
+    margin-bottom: 0.5em;
+    border-radius: 0.3em;
+   border: 1px solid gray;
+}
+
+input[type=submit]{
+    background-color: #6c63ff;
+    padding: 0.8em 1em;
+    border-radius: 5em;
+    margin-top:3em;
+    margin-bottom: 3em;
+    color: white;
+    font-style: bold;
+    font-weight: 600;
+    cursor: pointer;
+}
+input:focus{
+    background-color: #4d47c9;
+}
+
+
+.navbar .container{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    
+}
+
+nav{
+    background-color: #444444;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    color: white;
+    height: auto;
+}
+nav li a{
+    color: white;
+    display: block;
+    padding: 0.5em;
+    font-size: 16px;
+    text-align: center;
+}
+.navbar .menu-btn{
+    display: block;
+}
+nav li a:hover{
+    background: #4d47c9;
+}
+#menu-close{
+    width: 60px;
+}
+#menu-close:hover{
+    color: red;
+}
+
+@media screen and (min-width: 600px){
+
+    section{
+        padding: 4em;
+    }
+
+    #menu-open,#menu-close{
+        display: none;
+    }
+    .navbar .container{
+        display: grid;
+        grid-template-columns: 180px auto;
+        justify-content: unset;
+        padding:  0 70px;
+    }
+    .navbar{
+        padding: 5px;
+        
+    }
+    .navbar nav{
+        display: flex;
+        justify-content: flex-end;
+        background: none;
+        height: auto;
+        margin-left: 40px;
+        position: unset;
+    } 
+    .navbar a{
+        color: black;
+        font-size: 0.8em;
+        padding: 0.1em 1em;
+    } 
+    .navbar ul{
+        display: flex;
+    }
+    .navbar nav li.active a{
+        font-weight: bold;
+    }
+
+    .navbar nav .right-nav a{
+        background-color: #fd6584;
+        color: white;
+        margin-left:20px ;
+        border-radius: 5em;
+    }
+    .navbar nav .right-nav a:hover{
+        color: #fd6584;
+        background-color: white;
+        border: 1px solid #fd6584;
+    }
+    .hero .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .hero .container .hero-left{
+        text-align: left;
+        padding: 3em;
+    }
+    .hero .container .hero-left h1{
+        text-align: left;
+        font-weight: bolder;
+        animation-name: heading;
+        animation-duration: 5s;
+        animation-iteration-count: 3;
+        animation-timing-function: ease-in;
+    }
+
+    .hero-btn{
+        text-align: center;
+    }
+    .hero-img{
+        width: 30%;
+    }
+    @keyframes imgs {
+        0%{
+            width: 30%;
+        }
+        25%{
+            width: 40%;
+        }
+        100%{
+            width: 30%;
+        }
+    }
+    .features{
+        position: relative;
+    }
+    .features .container .feature-img {
+        display: block;
+        position: absolute;
+        right: 40px;
+        bottom: 30px;
+        width: 30%;
+        
+    }
+    .check{
+        color: rgb(116, 240, 116);
+        margin: 0 1em;
+    }
+ .testimonials .heading{
+     font-size: 40px;
+ }
+    .testimonials ul{
+        display: flex;
+    }
+    .testimonials ul li{
+        margin: 0 1em;
+        box-shadow: 0 0 10px #444444;
+    }
+    .testimonials ul li img{
+       transition:transform 4s;
+       object-fit: cover;
+       transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    }
+    .testimonials ul li img:hover{
+        transform: scale(2);
+    }
+    .testimonials ul li p{
+        font-size: 14px;
+    }@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+body{
+    background-color: #f2f2f2;
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+section{
+padding: 5em 2em;
+}
+
+.navbar{
+    background: white;
+}
+.navbar .brandname{
+    color: #6c63ff;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-left: 30px;
+}
+.navbar nav{
+    display: none ;
+}
+#menu-open{
+    width:20px;
+    float: right;
+}
+
+.hero{
+    text-align: center;
+}
+.hero .pre-heading{
+    color: gray;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.hero .heading{
+    font-size: 30px;
+    margin-top: 0.6em;
+}
+
+.hero-left .hero-btn{
+    background-color: #6c63ff;
+    color: white;
+    border: 2px solid #6c63ff;
+    border-radius: 5em;
+    width: 100px;
+    padding: 0.5em 1.3em;
+    display:inline-block;
+}
+
+.hero-left .hero-btn .btn{
+    color: white;
+}
+.hero-img{
+    width: 50%;
+    margin-top: 30px;
+}
+.features{
+    background-color: #444444;
+    color: white;
+}
+.features .container .feature-img {
+    display: none;
+}
+.features .features-left ol{
+    list-style:none;
+}
+.features .features-left ol li{
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+
+}
+.heading{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 1.5em;
+}
+.testimonials{
+    background-color: #6c63ff;
+    color: black;
+}
+.testimonials .heading{
+    color: white;
+}
+ .testimonials li  {
+background: white;
+text-align: center;
+padding: 2em 1em;
+margin: 0 auto 5em auto;
+border-radius: 1em;
+
+}
+
+.testimonials li img{
+    width: 5em;
+    height: 5em;
+    border: 5px solid #4d47c9;
+    border-radius: 50%;
+    margin-top: -4.5em;
+}
+label{
+    display: block;
+    font-size:16px;
+    margin-bottom: 10px;
+}
+input,textarea{
+    width: 100%;
+    padding: 0.7em;
+    margin-bottom: 0.5em;
+    border-radius: 0.3em;
+   border: 1px solid gray;
+}
+
+input[type=submit]{
+    background-color: #6c63ff;
+    padding: 0.8em 1em;
+    border-radius: 5em;
+    margin-top:3em;
+    margin-bottom: 3em;
+    color: white;
+    font-style: bold;
+    font-weight: 600;
+    cursor: pointer;
+}
+input:focus{
+    background-color: #4d47c9;
+}
+
+
+.navbar .container{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    
+}
+
+nav{
+    background-color: #444444;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    color: white;
+    height: auto;
+}
+nav li a{
+    color: white;
+    display: block;
+    padding: 0.5em;
+    font-size: 16px;
+    text-align: center;
+}
+.navbar .menu-btn{
+    display: block;
+}
+nav li a:hover{
+    background: #4d47c9;
+}
+#menu-close{
+    width: 60px;
+}
+#menu-close:hover{
+    color: red;
+}
+
+@media screen and (min-width: 600px){
+
+    section{
+        padding: 4em;
+    }
+
+    #menu-open,#menu-close{
+        display: none;
+    }
+    .navbar .container{
+        display: grid;
+        grid-template-columns: 180px auto;
+        justify-content: unset;
+        padding:  0 70px;
+    }
+    .navbar{
+        padding: 5px;
+        
+    }
+    .navbar nav{
+        display: flex;
+        justify-content: flex-end;
+        background: none;
+        height: auto;
+        margin-left: 40px;
+        position: unset;
+    } 
+    .navbar a{
+        color: black;
+        font-size: 0.8em;
+        padding: 0.1em 1em;
+    } 
+    .navbar ul{
+        display: flex;
+    }
+    .navbar nav li.active a{
+        font-weight: bold;
+    }
+
+    .navbar nav .right-nav a{
+        background-color: #fd6584;
+        color: white;
+        margin-left:20px ;
+        border-radius: 5em;
+    }
+    .navbar nav .right-nav a:hover{
+        color: #fd6584;
+        background-color: white;
+        border: 1px solid #fd6584;
+    }
+    .hero .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .hero .container .hero-left{
+        text-align: left;
+        padding: 3em;
+    }
+    .hero .container .hero-left h1{
+        text-align: left;
+        font-weight: bolder;
+        animation-name: heading;
+        animation-duration: 5s;
+        animation-iteration-count: 3;
+        animation-timing-function: ease-in;
+    }
+
+    .hero-btn{
+        text-align: center;
+    }
+    .hero-img{
+        width: 30%;
+    }
+    @keyframes imgs {
+        0%{
+            width: 30%;
+        }
+        25%{
+            width: 40%;
+        }
+        100%{
+            width: 30%;
+        }
+    }
+    .features{
+        position: relative;
+    }
+    .features .container .feature-img {
+        display: block;
+        position: absolute;
+        right: 40px;
+        bottom: 30px;
+        width: 30%;
+        
+    }
+    .check{
+        color: rgb(116, 240, 116);
+        margin: 0 1em;
+    }
+ .testimonials .heading{
+     font-size: 40px;
+ }
+    .testimonials ul{
+        display: flex;
+    }
+    .testimonials ul li{
+        margin: 0 1em;
+        box-shadow: 0 0 10px #444444;
+    }
+    .testimonials ul li img{
+       transition:transform 4s;
+       object-fit: cover;
+       transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    }
+    .testimonials ul li img:hover{
+        transform: scale(2);
+    }
+    .testimonials ul li p{
+        font-size: 14px;
+    }
+    .testimonials .heading{
+        margin-bottom: 80px;
+    }
+    .contact .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    iframe{
+        height: 100%;
+        width: 400px;
+        padding-left: 30px;
+    }
+
+}
+    .testimonials .heading{
+        margin-bottom: 80px;
+    }
+    .contact .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    iframe{
+        height: 100%;
+        width: 400px;
+        padding-left: 30px;
+    }
+
+}
+           </style>
         <script src="https://kit.fontawesome.com/a6fe5ea3d0.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -16,9 +632,9 @@
                          <ul class="left-nav">
                       <ul class="left-nav">
                           <li class="active"><a  href="index.html">Home</a></li>
-                          <li><a href="features.html">features</a></li>
-                          <li><a href="blog.html">Blog</a></li>
-                          <li><a href="#">Contact</a></li>
+                          <li><a href="#features">Features</a></li>
+                          <li><a href="#testimonials">Testimonials</a></li>
+                          <li><a href="#contact">Contact</a></li>
                       </ul>
                       
                       <ul class="right-nav">
@@ -44,7 +660,7 @@
                 </div>
             </section>
             
-            <section class="features"  >
+            <section class="features" id="features" >
                 <div class="container">
                         <h1 class="heading">Features</h1>
                         <div class="features-left">
@@ -61,7 +677,7 @@
                 </div>
             </section>
 
-            <section class="testimonials">
+            <section class="testimonials" id="testimonials">
                 <div class="container">
                         <h1 class="heading">Testimonials</h1>
                         <div >
@@ -92,7 +708,7 @@
         </main>
 
         <footer>   
-            <section class="contact">
+            <section class="contact" id="contact">
                     <div class="container">
                         <div class="contact-left">
                         <h1>Contact</h1>
