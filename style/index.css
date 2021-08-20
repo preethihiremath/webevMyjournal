@@ -263,9 +263,9 @@ nav li a:hover{
     .features .container .feature-img {
         display: block;
         position: absolute;
-        right: 40px;
-        bottom: 30px;
-        width: 20%;
+        right: 50px;
+        bottom: 40px;
+        width: 200px;
         
     }
     .check{
@@ -305,7 +305,7 @@ nav li a:hover{
         width: 400px;
         
     }
-.contact .container .contact-left{
-  width: 50%;
-}
+    .contact .container .contact-left{
+    width: 50%;
+    }
 }
